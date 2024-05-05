@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    color: #d50e0e;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+.no-button, .yes-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.no-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    font-weight: 400;
+}
+
+.no-button:hover {
+    background-color: #e60000;
+}
+
+.yes-button {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: 400;
+}
+
+.yes-button:hover {
+    background-color: #45a049;
+}
+
+.proposal {
+    display: none;
+    margin-top: 50px;
+}
+
+.proposal-text {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+#loveRain {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.love-emoji {
+    position: absolute;
+    font-size: 2rem;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
